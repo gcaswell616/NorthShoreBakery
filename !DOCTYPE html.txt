@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Shore Baking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #fff8f0;
+      color: #4d3c2f;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background-color: #f2e6d9;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #e0c9a6;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #b35f3f;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 5px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+      color: #7a4a31;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b35f3f;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1606755962770-1f6348b6d0e3?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* About Section */
+    .about {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #b35f3f;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    /* Featured Bakes */
+    .bakes {
+      background-color: #f2e6d9;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .bakes h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #b35f3f;
+    }
+
+    .bake-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .bake-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .bake-item:hover {
+      transform: scale(1.05);
+    }
+
+    .bake-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .bake-item h3 {
+      padding: 10px;
+      font-size: 1.2rem;
+      color: #7a4a31;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 60px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #b35f3f;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: 2px solid #e0c9a6;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      padding: 12px;
+      background-color: #b35f3f;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact button:hover {
+      background-color: #7a4a31;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f2e6d9;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #e0c9a6;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 768px){
+      .bake-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>North Shore Baking</h1>
+    <p>Homemade treats from a Detroit mom of 4</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#bakes">Our Bakes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Fresh, Homemade, Heartfelt</h2>
+    <p>Bringing the flavors of Michigan right to your table with every batch of cookies, pies, and bread.</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About North Shore Baking</h2>
+    <p>North Shore Baking is a small, home-based bakery run by a busy mom of four kids, right here near Detroit, Michigan. Every treat is baked with love, using family recipes and fresh, local ingredients whenever possible.</p>
+    <p>From cozy kitchen aromas to warm smiles, we bring a little taste of home in every bite.</p>
+  </section>
+
+  <section class="bakes" id="bakes">
+    <h2>Featured Bakes</h2>
+    <div class="bake-items">
+      <div class="bake-item">
+        <img src="https://images.unsplash.com/photo-1612197511056-6a48d5efdbd0?auto=format&fit=crop&w=800&q=80" alt="Cookies">
+        <h3>Chocolate Chip Cookies</h3>
+      </div>
+      <div class="bake-item">
+        <img src="https://images.unsplash.com/photo-1612392061783-5aeb9d8c8b56?auto=format&fit=crop&w=800&q=80" alt="Pie">
+        <h3>Seasonal Fruit Pies</h3>
+      </div>
+      <div class="bake-item">
+        <img src="https://images.unsplash.com/photo-1621882900684-0a2d707f19fa?auto=format&fit=crop&w=800&q=80" alt="Bread">
+        <h3>Fresh Breads</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top: 15px;">Or call us at (313) 555-1234</p>
+  </section>
+
+  <footer>
+    &copy; 2026 North Shore Baking | Based near Detroit, Michigan
+  </footer>
+</body>
+</html>
